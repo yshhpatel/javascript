@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Enter First Value:</h3>
+    <input type="text" id="Firstvalue">
+
+    <h3>Enter second Value:</h3>
+    <input type="text" id="secondvalue">
+
+    <h1 id="answer"></h1>
+</body>
+
+</html>
+<script>
+    let a = document.getElementById("Firstvalue").value
+    let b = document.getElementById("secondvalue").value
+
+    let c = +a == +b
+
+    document.getElementById("answer").innerHTML = a==b
+</script>
