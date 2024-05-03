@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <center>
+        <label for="">Enter Ammount</label><br>
+        <input type="text" id="in1"><br><br>
+        <h4 id="result"></h4> 
+    
+    </center>
+</body>
+</html>
+<script>
+    let a =document.getElementById("in1").value
+    let total = +a + (+a * 18/100)
+    document.getElementById("result").innerHTML=total
+</script>

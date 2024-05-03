@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>RESULT</center>
+
+    <center>
+        <h3>maths marks:</h3>
+        <input type="text" id="ins1">
+
+        <h3>english marks:</h3>
+        <input type="text" id="ins2">
+
+        <h3>drawing marks:</h3>
+        <input type="text" id="ins3">
+
+        <h3>pt marks:</h3>
+        <input type="text" id="ins4">
+
+        <h3>acc marks:</h3>
+        <input type="text" id="ins5">
+
+        <h1 id="ans"></h1>
+
+
+    </center>
+
+</body>
+
+</html>
+
+<script>
+    let a = document.getElementById("ins1").value
+    let b = document.getElementById("ins2").value
+    let c = document.getElementById("ins3").value
+    let d = document.getElementById("ins4").value
+    let e = document.getElementById("ins5").value
+
+    let total = (+a + +b + +c + +d + +e) * 100 / 500
+
+    document.getElementById("ans").innerHTML = total
+</script>

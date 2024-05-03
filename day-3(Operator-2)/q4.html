@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <center>
+        <label for="">Physics</label><br>
+        <input type="text" id="in1"><br><br>
+        <label for="">Chemistry</label><br>
+        <input type="text" id="in2"><br><br>
+        <label for="">Maths</label><br>
+        <input type="text" id="in3"><br><br>
+        <h4 id="result"></h4>
+
+    </center>
+</body>
+
+</html>
+<script>
+    let a = document.getElementById("in1").value
+    let b = document.getElementById("in2").value
+    let c = document.getElementById("in3").value
+    let total = (+a + +b + +c) / 3
+    document.getElementById("result").innerHTML = total
+</script>

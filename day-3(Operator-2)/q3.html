@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>swap value</center>
+
+    <center>
+        <h3>first number:</h3>
+        <input type="text" id="ins1">
+
+        <h3>second number</h3>
+        <input type="text" id="ins2">
+
+        <h3>third number</h3>
+        <input type="text" id="ins3">
+
+
+        <h1 id="ans1"></h1>
+        <h1 id="ans2"></h1>
+        <h1 id="ans3"></h1>
+
+
+    </center>
+
+</body>
+
+</html>
+
+<script>
+    let a = document.getElementById("ins1").value
+    let b = document.getElementById("ins2").value
+    let c = document.getElementById("ins3").value
+
+    document.getElementById("ans1").innerHTML = b
+    document.getElementById("ans2").innerHTML = c
+    document.getElementById("ans3").innerHTML = a
+
+</script>
