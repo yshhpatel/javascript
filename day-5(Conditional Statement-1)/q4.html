@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Enter a Number</h1>
+        <input type="text" id="s1">
+       
+
+        <h1 id="ans"></h1>
+    </center>
+</body>
+</html>
+<script>
+    let First=document.getElementById("s1").value
+    
+    if(First === ""){
+        document.getElementById("ans").innerHTML="enter a valid number."
+    }else{
+    if(First > 0){
+    document.getElementById("ans").innerHTML="Positive"
+    }else if(First < 0){
+        document.getElementById("ans").innerHTML="Negative"
+    }
+    else if(First == 0){
+        document.getElementById("ans").innerHTML="Zero"
+    }
+}
+</script>
