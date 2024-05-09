@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <br><br>
+        <h1>*Tax Calculator:*</h1>
+        <h2>Enter a amount:</h2>
+        <input type="text" id="s1">
+        <h2 id="ans"></h2>
+    </center>
+</body>
+
+</html>
+<script>
+    let tax = document.getElementById("s1").value
+    if (tax === "") {
+        document.getElementById("ans").innerHTML = "Enter valid amount!"
+    } else {
+        if (tax <= 1 && tax <= 10000) {
+            document.getElementById("ans").innerHTML = (tax * 5) / 100
+        }
+        else if (tax <= 10001 && tax <= 20000) {
+            document.getElementById("ans").innerHTML = (tax * 10) / 100
+        }
+        else if (tax <= 20001 && tax <= 30000) {
+            document.getElementById("ans").innerHTML = (tax * 15) / 100
+        }
+        else if (tax <= 30001 && tax <= 40000) {
+            document.getElementById("ans").innerHTML = (tax * 20) / 100
+        }
+        else if (tax <= 40000) {
+            document.getElementById("ans").innerHTML = (tax * 25) / 100
+        }
+    }
+</script>

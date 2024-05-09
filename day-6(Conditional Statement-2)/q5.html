@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Enter Student Mark</h1>
+
+    <input type="text" id="mark">
+    <h2 id="ans"></h2>
+</center>
+</body>
+</html>
+
+<script>
+    let mark = document.getElementById("mark").value 
+
+    if (mark === "") {
+        document.getElementById("ans").innerHTML = "Enter Valid Mark"
+    }else{
+        if(mark <= 90 && mark <= 100){
+        document.getElementById("ans").innerHTML = "A"
+        }else if(mark <= 80 && mark <= 89){
+        document.getElementById("ans").innerHTML = "B"
+        }else if(mark <= 70 && mark <= 79){
+            document.getElementById("ans").innerHTML = "C"
+
+        }else if(mark <= 60 && mark <= 69){
+        document.getElementById("ans").innerHTML = "D"
+            
+        }else{
+        document.getElementById("ans").innerHTML = "F"
+
+        }
+    }
+</script>
