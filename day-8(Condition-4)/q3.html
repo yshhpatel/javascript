@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <br><br><br><br><br>
+
+    <center>
+        <h1>Calculate intrest</h1>
+
+        <label for="">Enter your principle amount </label><br><br>
+        <input type="text" id="principle"><br><br><br>
+
+
+        <label for="">Enter your rate of intrest</label><br><br>
+        <input type="text" id="rate"><br><br><br>
+
+        <label for="">Enter your time period</label><br><br>
+        <input type="text" id="period"> <br><br>
+
+
+        <h1 id="ans"></h1>
+    </center>
+
+
+</body>
+
+</html>
+
+<script>
+
+    let principle = document.getElementById("principle").value
+    let rate = document.getElementById("rate").value
+    let period = document.getElementById("period").value
+
+    if (principle === "" && rate === "" && period === "") {
+        document.getElementById("ans").innerHTML = "Enter Valid Amount"
+    } else {
+
+
+        let plus = +principle * +rate * +period
+
+        let cal = plus / 100
+
+        document.getElementById("ans").innerHTML = cal
+    }
+
+</script>
