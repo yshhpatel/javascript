@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+<body>
+    <center>
+    <label for="">Enter Password :</label> <br>
+    <input type="text" id="in">
+    <h4 id="ans"></h4>
+</center>
+</body>
+</html>
+<script>
+    let a = "yash@123"
+    let b = document.getElementById("in").value
+    if(b===""){
+        document.getElementById("ans").innerHTML="Enter valid password"
+    }else{
+        if(a===b){
+            document.getElementById("ans").innerHTML="Password is correct"
+        }else{
+            document.getElementById("ans").innerHTML="Password is incorrect"
+        }
+    }
+</script>

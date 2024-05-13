@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+
+<body>
+    <center>
+        <label for="">Enter First Angle :</label> <br>
+        <input type="text" id="in1"> <br><br>
+        <label for="">Enter Second Angle :</label> <br>
+        <input type="text" id="in2"> <br><br>
+        <label for="">Enter Third Angle :</label> <br>
+        <input type="text" id="in3"> <br><br>
+        <h4 id="answer"></h4>
+        <h4 id="ans"></h4>
+
+    </center>
+</body>
+
+</html>
+<script>
+    let a = document.getElementById("in1").value
+    let b = document.getElementById("in2").value
+    let c = document.getElementById("in3").value
+    let sum = +a + +b + +c
+    if (sum == 180) {
+        document.getElementById("answer").innerHTML = "This is Tringle"
+        if (a == "" && b == "" && c == "") {
+            document.getElementById("ans").innerHTML = "Enter Valid angles"
+        } else {
+            if (a == b && b == c && c == a) {
+                document.getElementById("ans").innerHTML = "This is Equilateral Tringle"
+            } else if (a == b || b == c || a == c) {
+                document.getElementById("ans").innerHTML = "This is Isosceles Tringle"
+            } else {
+                document.getElementById("ans").innerHTML = "This is Scalene Tringle"
+            }
+        }
+    } else {
+        document.getElementById("answer").innerHTML = "This is not Tringle"
+    }
+
+</script>
