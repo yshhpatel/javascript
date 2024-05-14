@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>-------------secret number game-------------</h1>
+        <p>Guess a number between 1 and 100</p>
+
+
+        <h1>Enter a number</h1>
+        <input type="text" id="s1">
+
+        <h1 id="ans"></h1>
+    </center>
+</body>
+
+</html>
+
+<script>
+
+    let a = document.getElementById("s1").value
+    if (a == "") {
+        document.getElementById("ans").innerHTML = "Please enter a number"
+    }
+    else if (a == 7) {
+        document.getElementById("ans").innerHTML = "Congratulations! You guessed the correct number"
+    }
+    else {
+        if (a >= 2 && a <= 6) {
+            document.getElementById("ans").innerHTML = "Too low! Try a higher number."
+        }
+        else if (a <= -3) {
+            document.getElementById("ans").innerHTML = "Too low! Try a higher number."
+        }
+        else if (a >= 8 && a <= 18) {
+            document.getElementById("ans").innerHTML = "Too high! Try a lower number."
+        }
+        else if (a >= 19) {
+            document.getElementById("ans").innerHTML = "Too high! Try a lower number."
+        }
+    }
+
+</script>

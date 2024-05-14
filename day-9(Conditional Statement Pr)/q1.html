@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+<body>
+    <center>
+        <label style="font-size: 20px;" for="">------------ticket price based on age---------</label> <br><br>
+        <input type="enter your age" id="in1"> <br><br>
+        <h4 id="ans"></h4>
+    </center>
+</body>
+</html>
+<script>
+    let a = document.getElementById("in1").value
+    if(a==""){
+        document.getElementById("ans").innerHTML="Enter valid Age"
+    }else{
+        if(a>1 && a<=12){
+            document.getElementById("ans").innerHTML="5$"
+        }else if (a>12  && a<=18){
+            document.getElementById("ans").innerHTML="10$"
+        }else if (a>18  && a<=60){
+            document.getElementById("ans").innerHTML="20$"
+        }
+        else {
+            document.getElementById("ans").innerHTML="15$"
+        }
+    }
+</script>

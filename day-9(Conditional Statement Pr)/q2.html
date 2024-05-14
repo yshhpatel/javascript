@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+
+    #dis {
+        color: green;
+    }
+</style>
+
+<body>
+    <center>
+        <h1>Enter Your Total Amount</h1>
+
+        <input type="text" id="Amount">
+
+
+        <h1 id="dis"></h1>
+        <h1 id="ans"></h1>
+
+
+
+    </center>
+</body>
+
+</html>
+
+<script>
+
+    let amount = document.getElementById("Amount").value
+
+    if (amount >= 100) {
+        let sum = amount * (20 / 100)
+        let add = amount - sum
+
+        document.getElementById("dis").innerHTML = "yay! you got 20% discount"
+        document.getElementById("ans").innerHTML = "you pay " + add + "₹ only"
+    } else if (amount >= 50 && amount <= 99) {
+        let sum = amount * (10 / 100)
+        let add = amount - sum
+
+        document.getElementById("dis").innerHTML = "yay! you got 10% discount"
+        document.getElementById("ans").innerHTML = "you pay " + add + "₹ only"
+    } else {
+        document.getElementById("ans").innerHTML = "you pay " + amount + "₹ only"
+    }
+</script>

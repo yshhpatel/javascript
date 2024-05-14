@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>-------------Convert dollars into Rupees-------------</h1>
+
+        <h1>enter dollers</h1>
+        <input type="text" id="s1">
+
+        <h1 id="ans"></h1>
+    </center>
+</body>
+
+<script>
+    let a = document.getElementById("s1").value
+    let b = a * 83.51
+
+    if (a == "") {
+        document.getElementById("ans").innerHTML = "Please enter your dollers proparly"
+    }
+    else {
+        document.getElementById("ans").innerHTML = "Your Rupees is " + b
+    }
+</script>
+
+</html>
