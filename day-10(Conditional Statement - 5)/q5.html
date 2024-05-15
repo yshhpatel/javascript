@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+</head>
+
+<body>
+    <center>
+        <h1>Menu</h1>
+        <hr>
+        <h5>Java Chip Frappuccino</h5>
+        <h5>Caffe Americano</h5>
+        <h5>Cold coffee</h5>
+        <h5>Creamy Spinach and Corn Pocket</h5>
+        <h5>Cappuccino</h5>
+        <h5>Double Chocolate Chip Cookie</h5>
+        <hr>
+        <h1>Enter Item</h1>
+        <input type="text" id="in">
+        <h2 id="ans"></h2>
+
+    </center>
+</body>
+
+</html>
+
+<script>
+    let item = document.getElementById("in").value
+    if (item === "") {
+        document.getElementById("ans").innerHTML = "Enter any Item"
+    } else {
+        switch (item) {
+            case "Java Chip Frappuccino": document.getElementById("ans").innerHTML = "₹ 383.25"
+                break
+            case "Caffe Americano": document.getElementById("ans").innerHTML = "₹ 278.25"
+                break
+            case "Cold coffee": document.getElementById("ans").innerHTML = "₹ 372.75"
+                break
+            case "Double Chocolate Chip Frappuccino": document.getElementById("ans").innerHTML = "₹ 414.75"
+                break
+            case "Creamy Spinach and Corn Pocket": document.getElementById("ans").innerHTML = "₹ 252.00"
+                break
+            case "Cappuccino": document.getElementById("ans").innerHTML = "₹ 299.25"
+                break
+            case "Double Chocolate Chip Cookie": document.getElementById("ans").innerHTML = "₹ 294.00"
+                break
+            default:
+                document.getElementById("ans").innerHTML = "Invalid item"
+                break
+        }
+    }
+</script>

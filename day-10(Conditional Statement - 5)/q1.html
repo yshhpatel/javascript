@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>--------------enter a day--------------</h1>
+
+        <h1>Enter a Number</h1>
+        <input type="number" id="s1">
+
+        <h1 id="ans"></h1>
+    </center>
+
+</body>
+
+</html>
+
+<script>
+
+    let a = document.getElementById("s1").value
+
+    if (a === "") {
+        document.getElementById("ans").innerHTML = "Please Enter a Number"
+    }
+
+    else {
+        switch (+a) {
+            case 1: document.getElementById("ans").innerHTML = "It's the workweek."
+                break
+            case 2:document.getElementById("ans").innerHTML = "It's the start of the workweek."
+                break
+            case 3: document.getElementById("ans").innerHTML = "It's some other day."
+                break
+            case 4: document.getElementById("ans").innerHTML = "It's some other day."
+                break
+            case 5: document.getElementById("ans").innerHTML = "It's some other day."
+                break
+            case 6: document.getElementById("ans").innerHTML = "It's almost the weekend!"
+                break
+            case 7: document.getElementById("ans").innerHTML = "It's the start of the workweek."
+                break
+
+                default: document.getElementById("ans").innerHTML = "Enter a valid number"
+                break
+        }
+
+    }
+</script>

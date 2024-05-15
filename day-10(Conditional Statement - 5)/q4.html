@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>--------languages---------</h1>
+
+
+        <select name="" id="s1">
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="French">French</option>
+        </select>
+
+
+        <h1 id="ans"></h1>
+    </center>
+</body>
+
+</html>
+
+<script>
+
+    let a = document.getElementById("s1").value
+
+
+    switch (a) {
+        case "English":
+            document.getElementById("ans").innerHTML = "Hello!!"
+            break
+
+        case "Spanish":
+            document.getElementById("ans").innerHTML = "Bonjour!"
+            break
+        case "French":
+            document.getElementById("ans").innerHTML = "Hola"
+            break
+
+    }
+</script>
