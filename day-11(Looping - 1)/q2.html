@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+
+<body>
+    <center>
+        <label for="">Enter Name</label> <br><br>
+        <input type="text" id="in">
+        <h4 id="ans"></h4>
+    </center>
+</body>
+
+</html>
+
+<script>
+    let name = document.getElementById("in").value
+    let vowel = 0
+
+    for (let i = 0; i <= name.length - 1; i++) {
+        if (name[i] === "a" || name[i] === "A" || name[i] === "e" || name[i] === "E" || name[i] === "i" || name[i] === "I" || name[i] === "o" || name[i] === "O" || name[i] === "u" || name[i] === "U") {
+            vowel +=+ 1
+        }
+    }
+    document.getElementById("ans").innerHTML = vowel
+</script>

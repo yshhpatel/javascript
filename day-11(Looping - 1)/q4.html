@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <br><br><br>
+        <h1>--Find odd number--</h1>
+        <h2>Enter start number:</h2>
+        <input type="text" id="s1">
+        <h2>Enter end number:</h2>
+        <input type="text" id="s2">
+        <h2 id="ans"></h2>
+    </center>
+</body>
+
+</html>
+<script>
+    let start = document.getElementById("s1").value
+    let end = document.getElementById("s2").value
+    for (let i = start; i <= end; i++) {
+        if (i % 2 == 1) {
+            document.getElementById("ans").innerHTML += i + ",";
+        }
+    }
+</script>

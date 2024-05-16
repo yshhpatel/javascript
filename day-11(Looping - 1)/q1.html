@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>------------- Find if palindrome -------------</h1>
+
+        <h1>Enter a name</h1>
+        <input type="text" id="s1">
+
+        <h1 id="ans"></h1>
+
+    </center>
+</body>
+
+</html>
+
+<script>
+
+    let array = document.getElementById("s1").value
+    let res1 = ""
+    let res2 = ""
+
+    if (array === "") {
+        document.getElementById("ans").innerHTML = ""
+    }
+    else {
+        for (let i = 0; i <= array.length - 1; i++) {
+            res1 += array[i]
+        }
+        for (let i = array.length - 1; i >= 0; i--) {
+            res2 += array[i]
+        }
+        if (res1 === res2) {
+            document.getElementById("ans").innerHTML = "palindrome"
+        }
+        else {
+            document.getElementById("ans").innerHTML = "Not a palindrome"
+        }
+    }
+</script>
