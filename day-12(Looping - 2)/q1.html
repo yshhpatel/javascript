@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<center>
+    <h1 id="ans"></h1>
+
+</center>
+</body>
+
+</html>
+
+<script>
+    function countDigits(n) {
+        let count = 0;
+
+        do {
+            n = Math.floor(n / 10);
+            count++;
+        } while (n != 0);
+
+        return count;
+    }
+
+    let num = 1234434523523464325;
+    console.log("Number of digits in the number is: " + countDigits(num));
+
+    document.getElementById("ans").innerHTML = "Number of digits in the number is:" + countDigits(num) 
+
+
+</script>

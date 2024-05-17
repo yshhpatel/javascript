@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Even Numbers</title>
+</head>
+
+<body>
+   <center>
+    <h1>odd Numbers between 20 and 40</h1>
+    <p id="result"></p>
+
+   </center>
+</body>
+
+</html>
+
+<script>
+    let result = "";
+    let i = 20;
+
+    do {
+        if (i % 2 != 0) {
+            result += i + " ";
+        }
+        i++;
+    } while (i <= 40);
+
+    document.getElementById("result").innerText = result;
+
+</script>
