@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style=" font-family: Arial, Helvetica, sans-serif;">
+    <center>
+        <h1>Enter string: </h1>
+        <input type="text" id="in1">
+
+        <h1 id="ans"></h1>
+    </center>
+</body>
+
+</html>
+<script>
+    let text = document.getElementById("in1").value
+
+    let len = 0
+    function vowel() {
+        for (let i = 0; i <= text.length; i++) {
+            if (text[i] === "a" || text[i] === "e" || text[i] === "i" || text[i] === "o" || text[i] === "u" || text[i] === "A" || text[i] === "E" || text[i] === "I" || text[i] === "O" || text[i] === "U") {
+                len += 1
+            }
+        }
+        document.getElementById("ans").innerHTML = "Total vowel = " + len
+    }
+    vowel()
+</script>

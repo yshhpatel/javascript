@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <br><br><br>
+        <h1>--Find Simple Interst--</h1>
+        <h2>Enter principal Amount:</h2>
+        <input type="text" id="s1">
+        <h2>Enter Rate:</h2>
+        <input type="text" id="s2">
+        <h2>Enter Time:</h2>
+        <input type="text" id="s3">
+        <h2 id="ans"></h2>
+
+    </center>
+</body>
+
+</html>
+<script>
+
+
+
+    function ammount(p) {
+        let a = document.getElementById("s1").value
+        function rate(r) {
+            let b = document.getElementById("s2").value
+            function time(n) {
+                let c = document.getElementById("s3").value
+                document.getElementById("ans").innerHTML = "Simple Interst:" + ((a * b * c) / 100)
+            }
+            time()
+        }
+        rate()
+    }
+    ammount()
+
+</script>

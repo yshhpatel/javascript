@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+</head>
+
+<body>
+</body>
+
+</html>
+<script>
+    function pelendrom(num) {
+        let rev = 0, rem
+        while (num != 0) {
+            rem = num % 10
+            rev = rev * 10 + rem
+            num = Math.floor(num / 10)
+        }
+        console.log(rev)
+        if (num !== rev) {
+            console.log("Non Palendrom Number")
+        }
+        else {
+            console.log("Palendrom Number")
+        }
+    }
+    pelendrom(121)
+
+</script>
