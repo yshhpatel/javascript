@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+
+        background-color: rgba(45, 154, 105, 0.381);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #addition {
+        color: rgb(46, 19, 255);
+    }
+</style>
+
+<body>
+    <center>
+        <h1 id="arr"></h1>
+
+        <h1 id="ans"></h1>
+
+        <h1 id="add"></h1>
+    </center>
+</body>
+
+</html>
+<script>
+    let temp = 0
+    let arr = [1, 2, 3, 4]
+
+    document.getElementById("arr").innerHTML = "Your Array Is : " + arr
+
+    let ans = arr.filter((element) => {
+
+        if (element % 2 == 1) {
+            return document.getElementById("add").innerHTML = "Addition Is : " + (temp = temp + element)
+        }
+
+    }
+    )
+
+    document.getElementById("ans").innerHTML = "Array Odd Element Is : " + ans, temp
+</script>
