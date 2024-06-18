@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    let Student = [
+        { name: "a", marks: 20, std: "10th" },
+        { name: "b", marks: 10, std: "11th" },
+        { name: "c", marks: 50, std: "12th" },
+        { name: "d", marks: 30, std: "11th" },
+        { name: "e", marks: 80, std: "12th" },
+    ]
+
+    let ans = Student.map((el) => {
+        return el.name.toUpperCase()
+    })
+
+    console.log(ans)
+</script>
