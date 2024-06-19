@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    let book = [
+        { text: "Hayat-i-Jawid", author: "Allama Iqbal", price: 30, quantityAvailable: 4 },
+        { text: "Origin Of species", author: "Defoe", price: 45, quantityAvailable: 0 },
+        { text: "Faust", author: "Stanley ", price: 89, quantityAvailable: 0 },
+        { text: "Maudoodi.", author: "Dante", price: 29, quantityAvailable: 5 },
+    ]
+
+
+    let ans = book.filter((el) => {
+        return el.price < 60 && el.quantityAvailable > 0
+    })
+
+    console.log(ans)
+</script>
+
+3
