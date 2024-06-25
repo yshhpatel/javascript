@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bg.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+nav{
+    margin-left: 30%;
+    width: 60%;
+}
+nav a{    
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+nav a:hover{
+    color: #98A86D;
+}
+.container{
+    background: linear-gradient(rgba(255, 255, 255, 0.9),rgb(255, 255, 255,0.9));
+}
+.p1{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight:200;
+    font-size: 75px;
+}   
+.bt1{
+    height: 50px;
+    width: 150px;
+    border: 0px ;
+    background-color: #516225;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.bt2{
+    height: 50px;
+    width: 150px;
+    border: 0px ;
+    border:1px solid  #98a86d;
+    color: #98A86D;
+    background-color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.p2{
+    font-size: 22px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.p4{
+    font-size: 45px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.p3{
+    font-size: 17px;
+}
+.s1{
+    background-image: url(https://verdure.qodeinteractive.com/wp-content/uploads/2018/03/home-1-background-img-2.jpg);
+    background-size: cover;
+    color: white;
+}
+.s2{
+    background-image: url(https://verdure.qodeinteractive.com/wp-content/uploads/2018/03/home-1-background-img-4.jpg);
+    background-size: cover;
+}
+.slider{
+    height: 100px;
+    width: 1200px;
+}
+
+.count {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto Condensed", sans-serif;
+    align-items: center;
+    color: #98a86d;
+    font-size: 85px;
+    font-weight:250;
+    float: left;
+    margin: 30px;
+}
+.line{
+    height: 100px;
+}
+.p11{
+    font-size: 25px;
+    font-family: "Roboto Condensed", sans-serif;
+    position: relative;
+}
+.bt11{
+    height: 55px;
+    width: 200px;
+    border: 0px ;
+    background-color: #98a86d;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.block1{
+    height: 150vh;
+    width: 35%;
+    position: absolute;
+    right: 0px;
+    background-color: white;
+    z-index: 2;
+    background-image: url(https://verdure.qodeinteractive.com/wp-content/uploads/2018/04/fullscreen-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    display: none; 
+}
+#icon2{
+    position: absolute;
+    right: 50px;
+    font-size:35px;
+    top: 25px;
+}
+.onn{
+    display: block;
+}
+.off{
+    display: none;
+}
