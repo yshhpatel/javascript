@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <center>
+                <br><br>
+                <h1>Registration Form</h1>
+                <h2>Fill out the form carefully for registration</h2>
+                <br><br><br>
+            </center>
+            <form action="" id="signup">
+                <label for=""><b>Student Name</b></label> <br><br>
+                <input type="text" id="name1">
+                <input type="text" id="name2" style="position: relative;left: 30px;"><br>
+                <h5 style="color: gray;position: relative;top: 10px;">First Name <span
+                        style="position: relative;left: 42%;">Last Name</span></h5> <br><br>
+                <label for=""><b>Gender <span style="position: relative;left: 45%;">Student E-mail</span></b></label>
+                <br><br>
+                <select name="" id="">
+                    <option value="">Please Select</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select>
+                <input type="email" placeholder="ex: myname@example.com" id="email"
+                    style="position: relative;left: 30px;padding-left: 10px;"><br>
+                <h5 style="color: gray;position: relative;top: 10px;"> <span
+                        style="position: relative;left: 58%;">example@example.com</span></h5> <br><br>
+                <label for=""><b>Student ID <span style="position: relative;left: 40%;">List of
+                            Classes</span></b></label> <br><br>
+                <input type="text" id="pw">
+                <select name="" id="" style="position: relative;left: 7%;">
+                    <option value="">Please Select</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select> <br><br><br>
+                <center>
+                    <input type="submit" style="width: 175px;background-color:#18bd5b;color: white;font-weight:700;">
+                </center> <br>
+                <p id="err"></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    $(document).ready(function () {
+        $("#signup").submit(function (event) {
+            event.preventDefault();
+            $("#err").text("")
+
+            let password = $("#pw").val()
+            let passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/
+            if (password == "") {
+                $("#err").text("Enter Student ID");
+            } else if (!passwordRegex.test(password)) {
+                $("#err").text("Enter Strong ID");
+            }
+
+            let email = $("#email").val()
+            if (email == "") {
+                $("#err").text("Enter Email ID");
+            }
+
+            let name1 = $("#name1").val()
+            let name2 = $("#name2").val()
+            if (name2 == "") {
+                $("#err").text("Enter LastName");
+            }
+            if (name1 == "") {
+                $("#err").text("Enter FirstName");
+            }
+
+        })
+
+    })
+</script>

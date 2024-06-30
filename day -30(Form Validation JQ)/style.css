@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(to right,#FFA500 , #FF4500);
+}
+.container{
+    height:95vh;
+    width: 38vw;
+    border-radius: 2rem;
+    background-color: #fff;
+    position: relative;
+    top: 30px;
+    left: 30%;
+}
+form{
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 12px;
+    color: grey;
+}
+input{
+    height: 40px;
+    width: 230px;
+    border-radius: 0.25rem;
+    border: 1px solid ;
+}
+select{
+    height: 40px;
+    width: 230px;
+    border-radius: 0.25rem;
+    border: 1px solid ;
+}
