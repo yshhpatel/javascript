@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    div {
+        margin-top: 200px;
+    }
+
+    img {
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div>
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/9384b37a848c5e60.jpg?q=90" alt="">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/354cde8026deab5a.jpg?q=90" alt="">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/1aaeb0a6531bef88.jpg?q=90" alt="">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/bdd9bb733f1c0b71.jpg?q=90" alt="">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/9e9aa250dfecdbc3.jpg?q=90" alt="">
+    </div>
+</body>
+
+</html>
+<script>
+    let photos = document.querySelectorAll("img")
+    let index = 0;
+
+    function slide_Images(index) {
+        for (let i = 0; i < photos.length; i++) {
+            photos[i].style.display = "none";
+        }
+        photos[index].style.display = "block";
+    }
+
+    function show_Images() {
+        setInterval(() => {
+            slide_Images(index)
+            index++;
+            if (index == photos.length) {
+                index = 0;
+            }
+        }, 1000)
+    }
+    show_Images()
+</script>
