@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+<style>
+    img {
+        display: none;
+        height: 100px;
+        width: 100px;
+    }
+</style>
+
+<body>
+    <center>
+        <h1></h1>
+        <img src="https://i.pinimg.com/originals/47/03/1a/47031a84b5b3a212ed8110ef7971f9c8.gif" alt="">
+    </center>
+</body>
+
+</html>
+<script>
+    let index = 10;
+    let stop = setInterval(() => {
+        index--;
+        document.querySelector("h1").innerHTML = index;
+        if (index == 0) {
+            clearInterval(stop);
+            document.querySelector("img").style.display = "block";
+            document.querySelector("h1").style.display = "none";
+        }
+    }, 1000)
+</script>

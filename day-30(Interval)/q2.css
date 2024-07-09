@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#p1 {
+    height: 150px;
+    width: 100%;
+    background-color: #02395a;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#p11 {
+    height: 150px;
+    width: 15%;
+    color: white;
+}
+
+#p22 {
+    height: 150px;
+    width: 15%;
+    color: white;
+}
+
+#p33 {
+    height: 150px;
+    width: 15%;
+    color: white;
+}
+
+#p44 {
+    height: 150px;
+    width: 15%;
+    color: white;
+}
+
+#p55 {
+    height: 150px;
+    width: 15%;
+    color: white;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #5e7f95;
+}

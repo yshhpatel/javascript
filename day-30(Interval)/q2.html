@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="q2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Q2</title>
+</head>
+
+<body>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="p1">
+        <div id="p11">
+            <center>
+                <br>
+                <i class="fa-regular fa-user" style="font-size: 2rem;"></i>
+                <h1 id="i1"></h1>
+                <h3>Students Trained</h3>
+            </center>
+        </div>
+        <div id="p22">
+            <center>
+                <br>
+                <i class="fa-regular fa-building" style="font-size: 2rem;"></i>
+                <h1 id="i2"></h1>
+                <h3>Branches</h3>
+            </center>
+        </div>
+        <div id="p33">
+            <center>
+                <img src="https://www.rnwmultimedia.edu.in/images/certificate.png" alt=""
+                    style="height: 37.5px;margin-top: 20px;">
+                <h1 id="i3"></h1>
+                <h3>Certification</h3>
+            </center>
+        </div>
+        <div id="p44">
+            <center>
+                <br>
+                <i class="fa-regular fa-user" style="font-size: 2rem;"></i>
+                <h1 id="i4"></h1>
+                <h3>Approved Course</h3>
+            </center>
+        </div>
+        <div id="p55">
+            <center>
+                <br>
+                <i class="fa-regular fa-user" style="font-size: 2rem;"></i>
+                <h1 id="i5"></h1>
+                <h3>Companies Tie-Ups</h3>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let index1 = 0;
+    let stop1 = setInterval(() => {
+        index1 += 100
+        document.querySelector("#i1").innerHTML = index1 + "+"
+        if (index1 === 37500) {
+            clearInterval(stop1)
+        }
+    }, 10);
+
+    let index2 = 0;
+    let stop2 = setInterval(() => {
+        index2 += 1
+        document.querySelector("#i2").innerHTML = index2 + "+"
+        if (index2 === 22) {
+            clearInterval(stop2)
+        }
+    }, 300);
+
+    let index3 = 0;
+    let stop3 = setInterval(() => {
+        index3 += 1
+        document.querySelector("#i3").innerHTML = index3 + "+"
+        if (index3 === 8) {
+            clearInterval(stop3)
+        }
+    }, 400);
+
+    let index4 = 0;
+    let stop4 = setInterval(() => {
+        index4 += 5
+        document.querySelector("#i4").innerHTML = index4 + "+"
+        if (index4 === 50) {
+            clearInterval(stop4)
+        }
+    }, 300);
+
+    let index5 = 0;
+    let stop5 = setInterval(() => {
+        index5 += 10
+        document.querySelector("#i5").innerHTML = index5 + "+"
+        if (index5 === 1500) {
+            clearInterval(stop1)
+        }
+    }, 50)
+</script>
