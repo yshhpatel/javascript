@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 15px 10px 16px 20px rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+
+        #countdown {
+            font-size: 2em;
+            margin-top: 20px;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        span {
+            display: inline-block;
+            min-width: 70px;
+            padding: 10px;
+            background: #e0e0e0;
+            margin: 5px;
+            border-radius: 5px;
+            color: #000000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Countdown</h1>
+        <div id="countdown">
+            <span id="seconds"></span>
+            <span>Seconds</span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const countdownElement = document.getElementById("countdown");
+            const secondsElement = document.getElementById("seconds");
+
+            const countdownDate = new Date("Dec 31, 2025 23:59:59").getTime();
+
+            const interval = setInterval(function () {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                secondsElement.textContent = seconds;
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

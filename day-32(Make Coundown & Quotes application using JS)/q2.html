@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Application</title>
+    <link rel="stylesheet" href="q2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quotes Application</h1>
+        <div class="quote-container">
+            <p id="quote"></p>
+            <p id="author"></p>
+        </div>
+        <button id="new-quote">New Quote</button>
+    </div>
+
+</body>
+</html>
+<script>
+    const quoteContainer = document.getElementById('quote-container');
+const quoteElement = document.getElementById('quote');
+const authorElement = document.getElementById('author');
+const newQuoteButton = document.getElementById('new-quote');
+
+let quotes = [
+    {
+        quote: "Believe you can and you're halfway there.",
+        author: "Theodore Roosevelt"
+    },
+    {
+        quote: "The only way to do great work is to love what you do.",
+        author: "Steve Jobs"
+    },
+    {
+        quote: "Be the change that you wish to see in the world.",
+        author: "Mahatma Gandhi"
+    },
+    // Add more quotes here
+];
+
+newQuoteButton.addEventListener('click', displayNewQuote);
+
+function displayNewQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const randomQuote = quotes[randomIndex];
+    quoteElement.textContent = randomQuote.quote;
+    authorElement.textContent = `- ${randomQuote.author}`;
+}
+
+displayNewQuote(); // Display a random quote on page load
+</script>
