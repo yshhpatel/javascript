@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Products from Fake Store API</h1>
+    <ul id="product-list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <script>
+        fetch("https://fakestoreapi.com/products")
+            .then((res) => {
+                return res.json()
+            }).then((json) => {
+                const productList = document.getElementById("product-list");
+                json.forEach((product) => {
+                    document.querySelector("li").innerHTML = `${product.title} - ${product.price}`;
+                    productList.appendChild(document.querySelector("li"));
+                });
+            }).catch((err) => {
+                console.log(err)
+            })
+    </script>
+</body>
+
+</html>
