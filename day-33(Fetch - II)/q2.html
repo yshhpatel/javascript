@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<style>
+    .img {
+        height: 250px;
+        width: 250px;
+    }
+</style>
+
+<body>
+    <div id="main"></div>
+</body>
+
+</html>
+<script>
+    fetch('https://dog.ceo/api/breeds/image/random')
+        .then((res) => {
+            return res.json()
+        }).then((json) => {
+            console.log(json)
+            showImg(json)
+        }).catch((err) => {
+            console.log(err)
+        })
+
+    function showImg(json) {
+        let box = document.createElement('div')
+        let pic = document.createElement('img')
+        pic.setAttribute("src", json.message)
+        pic.setAttribute("class", "img")
+        box.append(pic)
+        document.getElementById("main").append(box)
+    }
+</script>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+<style>
+    .item_Img {
+        height: 250px;
+        width: 250px;
+    }
+
+    #item_Text {
+        color: red;
+    }
+</style>
+
+<body>
+    <div id="main"></div>
+</body>
+
+</html>
+<script>
+    fetch('https://fakestoreapi.com/products')
+        .then((res) => {
+            return res.json()
+        }).then((json) => {
+            console.log(json)
+            show_Data(json)
+        }).catch((err) => {
+            console.log(err)
+        })
+
+    function show_Data(json) {
+        json.map((el) => {
+            let box = document.createElement("div")
+            let heading = document.createElement("h1")
+            heading.innerHTML = el.title
+            heading.setAttribute("id", "item_Text")
+            let pic = document.createElement("img")
+            pic.setAttribute("src", el.image)
+            pic.setAttribute("class", "item_Img")
+            box.append(heading, pic)
+            document.getElementById("main").append(box)
+        })
+    }
+</script>
