@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: #87CEEB;
+}
+
+.main {
+    height: 650px;
+    width: 490px;
+    background: #F2C464;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-left: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#input {
+    height: 50px;
+    width: 350px;
+    background-color: #333333;
+    position: relative;
+    top: 50px;
+    border-radius: 14px;
+    border: none;
+    left: 30px;
+    font-size: 1.5rem;
+    padding-left: 15px;
+    color: #FFFFFF;
+}
+
+#btn {
+    background-color: #4CAF50;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    color: #FFFFFF;
+}
+
+#img1 {
+    height: 150px;
+    width: 150px;
+    background-color: transparent;
+    position: relative;
+    top: 75px;
+    left: 175px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#h1 {
+    font-size: 3.5rem;
+    background-color: transparent;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    position: relative;
+    top: 40px;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+#name {
+    font-size: 2.1rem;
+    background-color: transparent;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    position: relative;
+    top: 40px;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+#img2 {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    position: relative;
+    top: 100px;
+    left: 290px;
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: light;
+}
+
+#wind {
+    font-size: 1.8rem;
+    background-color: transparent;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    position: relative;
+    top: 135px;
+    left: 340px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+#img3 {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: light;
+}
+
+#humadity {
+    font-size: 1.8rem;
+    background-color: transparent;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    position: relative;
+    top: 55px;
+    left: 100px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
