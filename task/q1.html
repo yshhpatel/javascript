@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    let arr = [1, 5, 7]
+    arr.push(4)
+    console.log("after push:" + arr)
+
+    arr.pop()
+    console.log("after pop:" + arr)
+
+    let ans = arr.slice(0, 1)
+    console.log("after slice:" + ans)
+
+    arr.splice(1, 1, 6)
+    console.log("after splice:" + arr)
+
+    arr.shift()
+    console.log("after shift:" + arr)
+
+    arr.unshift(9)
+    console.log("after unshift:" + arr)
+
+    arr.sort()
+    console.log("after sort:" + arr)
+
+    arr.reverse()
+    console.log("after reverce:" + arr)
+    console.log("-----------map method------------")
+    arr.map((el) => {
+        console.log(el * 2)
+    })
+
+    console.log("..........................")
+    console.log("----------filter method---------------")
+    let ans1 = arr.filter((el) => {
+        return el % 2 == 0
+
+    })
+    console.log("after filter:" + ans1)
+
+
+
+    console.log("..........................")
+
+    console.log("----------reduce method---------------")
+
+    let ans2 = arr.reduce((pre, cur) => {
+        return pre * cur
+    })
+    console.log("after reduce:" + ans2)
+
+
+</script>
